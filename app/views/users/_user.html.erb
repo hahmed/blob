@@ -9,5 +9,6 @@
     <%= user.description %>
   </p>
 
-  <p><%= image_tag user.avatar.representation(:preview) %></p>
+  <%# <p><%= image_tag user.avatar.representation(:preview) %></p> %>
+  <p><%= user.avatar.representation(:preview).key %></p>
 </div>
